@@ -1,0 +1,108 @@
+{
+  "name": "@org-name/tasks-page",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "single-spa-react": "^4.3.1",
+    "@types/jest": "^27.0.1",
+    "@types/systemjs": "^6.1.1",
+    "@types/webpack-env": "^1.16.2",
+    "single-spa": "^5.9.3",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^16.11.33",
+    "axios": "^0.27.2",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.7.0",
+    "tailwindcss": "^3.0.24",
+    "twin.macro": "^2.8.2",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start:standalone": "webpack serve --env standalone",
+    "build:webpack": "webpack --mode=production",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "prepare": "husky install",
+    "build:types": "tsc",
+    "analyze": "webpack --mode=production --env.analyze=true",
+    "build": "webpack --mode=production",
+    "coverage": "jest --coverage",
+    "lint": "eslint src",
+    "prettier": "prettier --write './**'",
+    "start": "webpack-dev-server",
+    "test": "jest --passWithNoTests",
+    "watch-tests": "jest --watch",
+    "start:dev": "webpack serve --port 9000 --env isLocal"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-table": "^7.7.11",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "autoprefixer": "^10.4.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.29.4",
+    "postcss": "^8.4.13",
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.15.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^27.0.6",
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-config-single-spa-react": "^4.0.0",
+    "webpack-dev-server": "^4.0.0",
+    "webpack-merge": "^5.8.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "typescript": "^4.3.5",
+    "webpack-config-single-spa-ts": "^4.0.0",
+    "ts-config-single-spa": "^3.0.0",
+    "@types/testing-library__jest-dom": "^5.14.1",
+    "eslint-config-ts-react-important-stuff": "^3.0.0",
+    "webpack-config-single-spa-react-ts": "^4.0.0"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js"
+    }
+  },
+  "types": "dist/org-name-tasks-page.d.ts"
+}
